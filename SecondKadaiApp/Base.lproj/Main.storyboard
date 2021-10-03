@@ -16,24 +16,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HxI-EI-Cik">
-                                <rect key="frame" x="50" y="188" width="315" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HxI-EI-Cik">
+                                <rect key="frame" x="30" y="140" width="354" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xya-r6-RyV">
-                                <rect key="frame" x="156" y="254" width="102" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xya-r6-RyV">
+                                <rect key="frame" x="20" y="194" width="374" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="次へ"/>
                                 <connections>
                                     <segue destination="Xwj-wZ-msp" kind="show" id="r0v-7g-Rme"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="名前を入力してください" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pcb-Pb-qug">
-                                <rect key="frame" x="44" y="142" width="326" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前を入力してください" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pcb-Pb-qug">
+                                <rect key="frame" x="10" y="94" width="394" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -41,6 +38,17 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Pcb-Pb-qug" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="68B-M1-bUJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HxI-EI-Cik" secondAttribute="trailing" constant="30" id="8Sm-Lk-3hL"/>
+                            <constraint firstItem="xya-r6-RyV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="IYh-Ya-Obh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xya-r6-RyV" secondAttribute="trailing" constant="20" id="PhE-1h-QrC"/>
+                            <constraint firstItem="HxI-EI-Cik" firstAttribute="top" secondItem="Pcb-Pb-qug" secondAttribute="bottom" constant="25" id="UkB-WL-ejV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Pcb-Pb-qug" secondAttribute="trailing" constant="10" id="Z0Y-UG-mAP"/>
+                            <constraint firstItem="xya-r6-RyV" firstAttribute="top" secondItem="HxI-EI-Cik" secondAttribute="bottom" constant="20" id="vh6-Rk-MT4"/>
+                            <constraint firstItem="Pcb-Pb-qug" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="vk9-zk-bVC"/>
+                            <constraint firstItem="HxI-EI-Cik" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="x3S-8R-Ypb"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="nameField" destination="HxI-EI-Cik" id="V9a-Mh-EbH"/>
@@ -58,16 +66,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="mes1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybS-rJ-duw">
-                                <rect key="frame" x="98" y="95" width="218" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mes1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybS-rJ-duw">
+                                <rect key="frame" x="30" y="50" width="354" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psV-25-xVs">
-                                <rect key="frame" x="124" y="204" width="166" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psV-25-xVs">
+                                <rect key="frame" x="30" y="171" width="354" height="30"/>
                                 <state key="normal" title="わかりました"/>
                                 <connections>
                                     <segue destination="Vng-tD-Oye" kind="unwind" unwindAction="unwind:" id="pK5-2J-QtA"/>
@@ -76,6 +82,14 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="oIe-VJ-66A"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="psV-25-xVs" firstAttribute="top" secondItem="ybS-rJ-duw" secondAttribute="bottom" constant="100" id="Mlf-Yb-F9m"/>
+                            <constraint firstItem="psV-25-xVs" firstAttribute="leading" secondItem="oIe-VJ-66A" secondAttribute="leading" constant="30" id="WMh-vg-mhP"/>
+                            <constraint firstItem="ybS-rJ-duw" firstAttribute="leading" secondItem="oIe-VJ-66A" secondAttribute="leading" constant="30" id="Wbc-hl-5mG"/>
+                            <constraint firstItem="ybS-rJ-duw" firstAttribute="top" secondItem="oIe-VJ-66A" secondAttribute="top" constant="50" id="c9Q-VB-J54"/>
+                            <constraint firstItem="oIe-VJ-66A" firstAttribute="trailing" secondItem="psV-25-xVs" secondAttribute="trailing" constant="30" id="kez-7c-BYA"/>
+                            <constraint firstItem="oIe-VJ-66A" firstAttribute="trailing" secondItem="ybS-rJ-duw" secondAttribute="trailing" constant="30" id="uPe-Pd-iNA"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1Hy-cI-KEZ"/>
                     <connections>
